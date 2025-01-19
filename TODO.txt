@@ -1,0 +1,11 @@
+LEVELS:
+	Shopping Mall
+	Return to Zoo
+	Office Building
+	
+main thing is to just run around inside buildings, destroying smaller props to get points
+larger props require more momentum? and give more points/combo
+
+Almost like a racing game, where there is a linear set path, and you are trying to destroy as much as possible to build up combo & score
+
+Elephant
