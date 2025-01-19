@@ -1,3 +1,13 @@
+make player input allow player to slow down only to a certain point, not completely stop
+also allow for slower acceleration to a top speed that can then be boosted by combo or other factors
+
+when going around turns in the level, either player will have to move relative to camera, 
+or the entire stage will have to rotate so that player can continue to move based
+on x & y coordinate plane
+
+no matter what try to maintain player momentum
+
+
 LEVELS:
 	Shopping Mall
 	Return to Zoo
