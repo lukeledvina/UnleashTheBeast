@@ -40,9 +40,9 @@ modulate = Color(0, 0, 1, 1)
 position = Vector2(321, 210)
 
 [connection signal="body_entered" from="Level/Breakables/Stall" to="Level/Breakables/Stall" method="_on_body_entered"]
-[connection signal="body_entered" from="Level/Breakables/@Area2D@25848" to="Level/Breakables/@Area2D@25848" method="_on_body_entered"]
-[connection signal="body_entered" from="Level/Breakables/@Area2D@25849" to="Level/Breakables/@Area2D@25849" method="_on_body_entered"]
-[connection signal="body_entered" from="Level/Breakables/@Area2D@27317" to="Level/Breakables/@Area2D@27317" method="_on_body_entered"]
-[connection signal="body_entered" from="Level/Breakables/@Area2D@27318" to="Level/Breakables/@Area2D@27318" method="_on_body_entered"]
-[connection signal="body_entered" from="Level/Breakables/@Area2D@27320" to="Level/Breakables/@Area2D@27320" method="_on_body_entered"]
-[connection signal="body_entered" from="Level/Breakables/@Area2D@27321" to="Level/Breakables/@Area2D@27321" method="_on_body_entered"]
+[connection signal="body_entered" from="Level/Breakables/@Area2D@18258" to="Level/Breakables/@Area2D@18258" method="_on_body_entered"]
+[connection signal="body_entered" from="Level/Breakables/@Area2D@18259" to="Level/Breakables/@Area2D@18259" method="_on_body_entered"]
+[connection signal="body_entered" from="Level/Breakables/@Area2D@18260" to="Level/Breakables/@Area2D@18260" method="_on_body_entered"]
+[connection signal="body_entered" from="Level/Breakables/@Area2D@18261" to="Level/Breakables/@Area2D@18261" method="_on_body_entered"]
+[connection signal="body_entered" from="Level/Breakables/@Area2D@18262" to="Level/Breakables/@Area2D@18262" method="_on_body_entered"]
+[connection signal="body_entered" from="Level/Breakables/@Area2D@18263" to="Level/Breakables/@Area2D@18263" method="_on_body_entered"]
