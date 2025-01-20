@@ -1,8 +1,42 @@
-[gd_scene load_steps=2 format=3 uid="uid://un11lho26yb0"]
+[gd_scene load_steps=5 format=3 uid="uid://un11lho26yb0"]
 
+[ext_resource type="Texture2D" uid="uid://dnpc2nxse3api" path="res://white_square.png" id="1_ipha0"]
 [ext_resource type="PackedScene" uid="uid://bdspyp38526mk" path="res://Player/player.tscn" id="1_usffs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4lkpx"]
+size = Vector2(20, 583)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yxr43"]
+size = Vector2(556, 20)
 
 [node name="Game" type="Node2D"]
 
+[node name="Level" type="Node2D" parent="."]
+
+[node name="Ground" type="Sprite2D" parent="Level"]
+position = Vector2(319, 177)
+scale = Vector2(20.75, 27)
+texture = ExtResource("1_ipha0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Level"]
+position = Vector2(407.5, -69)
+scale = Vector2(31.6875, 12.875)
+texture = ExtResource("1_ipha0")
+
+[node name="Barrier" type="StaticBody2D" parent="Level"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Barrier"]
+position = Vector2(143, 101.5)
+shape = SubResource("RectangleShape2D_4lkpx")
+
+[node name="Barrier2" type="StaticBody2D" parent="Level"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Barrier2"]
+position = Vector2(408, -180)
+shape = SubResource("RectangleShape2D_yxr43")
+
 [node name="Player" parent="." instance=ExtResource("1_usffs")]
+modulate = Color(0, 0, 1, 1)
 position = Vector2(321, 210)

@@ -11,6 +11,9 @@ no matter what try to maintain player momentum
 WASD for movement, hold space to drift at turns, camera rotates on its own according to path and player speed
 player must move relative to camera
 
+its fine if the player turns around, the game should be designed so that
+that is the least optimal thing a player can do
+
 LEVELS:
 	Shopping Mall
 	Return to Zoo
