@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc4rd2irruhmg"]
+
+[ext_resource type="PackedScene" uid="uid://sh5ba58iyroq" path="res://Breakable/breakable.tscn" id="1_fyjme"]
+[ext_resource type="Texture2D" uid="uid://dnpc2nxse3api" path="res://white_square.png" id="2_1hejw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vup5n"]
+size = Vector2(20, 28)
+
+[node name="Stall" instance=ExtResource("1_fyjme")]
+
+[node name="Sprite2D" parent="." index="1"]
+modulate = Color(0, 1, 0, 1)
+scale = Vector2(1.25, 1.75)
+texture = ExtResource("2_1hejw")
+
+[node name="CollisionShape2D" parent="." index="2"]
+shape = SubResource("RectangleShape2D_vup5n")
