@@ -14,6 +14,14 @@ player must move relative to camera
 its fine if the player turns around, the game should be designed so that
 that is the least optimal thing a player can do
 
+WHERE IS THE FUN?:
+	in seeing things you touch get destroyed, and seeing the effects of your rampage
+	feeling unstoppable
+	
+how to implement the fun:
+	good animations & sfx for destruction
+	seeing pedestrians run away in fear
+
 LEVELS:
 	Shopping Mall
 	Return to Zoo
