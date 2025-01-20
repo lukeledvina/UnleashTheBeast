@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://sh5ba58iyroq"]
+
+[ext_resource type="Script" path="res://Breakable/breakable.gd" id="1_qy8ek"]
+
+[node name="Breakable" type="Area2D"]
+collision_layer = 4
+script = ExtResource("1_qy8ek")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
