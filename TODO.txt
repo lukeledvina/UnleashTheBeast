@@ -8,6 +8,9 @@ on x & y coordinate plane
 no matter what try to maintain player momentum
 
 
+WASD for movement, hold space to drift at turns, camera rotates on its own according to path and player speed
+player must move relative to camera
+
 LEVELS:
 	Shopping Mall
 	Return to Zoo
