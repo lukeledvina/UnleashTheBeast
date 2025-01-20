@@ -1,6 +1,9 @@
 extends CharacterBody2D
 
+@onready var camera: Camera2D = $Camera2D
+
 const speed: int = 200
+
 
 func _physics_process(delta):
 	var input_direction = Input.get_vector("left", "right", "up", "down")
@@ -9,6 +12,7 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("drift"):
 		drift(input_direction.x)
+		
 
 
 func drift(direction):
