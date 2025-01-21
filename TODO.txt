@@ -1,18 +1,7 @@
-make player input allow player to slow down only to a certain point, not completely stop
 also allow for slower acceleration to a top speed that can then be boosted by combo or other factors
-
-when going around turns in the level, either player will have to move relative to camera, 
-or the entire stage will have to rotate so that player can continue to move based
-on x & y coordinate plane
 
 no matter what try to maintain player momentum
 
-
-WASD for movement, hold space to drift at turns, camera rotates on its own according to path and player speed
-player must move relative to camera
-
-its fine if the player turns around, the game should be designed so that
-that is the least optimal thing a player can do
 
 WHERE IS THE FUN?:
 	in seeing things you touch get destroyed, and seeing the effects of your rampage
@@ -29,7 +18,5 @@ LEVELS:
 	
 main thing is to just run around inside buildings, destroying smaller props to get points
 larger props require more momentum? and give more points/combo
-
-Almost like a racing game, where there is a linear set path, and you are trying to destroy as much as possible to build up combo & score
 
 Elephant
