@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var ui = $UI
+@onready var score_manager = $ScoreManager
 var total_score: int = 0
 @onready var breakables = $Level/BreakableContainer.get_children()
 
@@ -10,5 +12,7 @@ func _ready():
 		breakable.connect("broken", _on_breakable_broken)
 
 func _on_breakable_broken(score):
-	total_score += score
+	score_manager.increase_score(score)
 	combo_manager.increase_combo(score)
+	ui.update_score_label(score_manager.total_score)
+	ui.update_combo_labels()
