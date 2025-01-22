@@ -1,3 +1,5 @@
+a bug exists with decreasing rage levels
+
 increase player speed based on combo
 allow player to break different breakables based on combo
 
@@ -19,7 +21,6 @@ UI:
 
 	implement combo as a meter that drains over time
 	for now just implement as numbers, do more if time allows
-	can change name of combo meter to RAGE
 
 
 LEVELS:

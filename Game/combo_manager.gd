@@ -31,6 +31,11 @@ func _on_combo_timeout_timer_timeout():
 func _process(delta):
 	if combo_timeout:
 		combo_progress -= 10 * delta
-		if combo_progress < 0:
+
+		
+		if combo_level <= min_combo_level and combo_progress <= 0:
+			combo_timeout = false
+		elif combo_progress <= 0:
 			combo_level = max(combo_level - 1, min_combo_level)
+			combo_progress = combo_breakpoint
 		combo_timeout_signal.emit()
