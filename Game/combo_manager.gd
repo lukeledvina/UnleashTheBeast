@@ -12,8 +12,8 @@ var min_combo_level: int = 0
 
 var combo_timeout: bool = false
 
-func increase_combo(score: int) -> void:
-	combo_progress += score
+func increase_combo(combo_value: int) -> void:
+	combo_progress += combo_value
 	if combo_progress >= combo_breakpoint:
 		combo_level = min(combo_level + 1, max_combo_level)
 		combo_progress = 0

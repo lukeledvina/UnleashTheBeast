@@ -10,6 +10,8 @@ var drift_speed: float = 1.5
 var turn_speed: float = 0.75
 var friction: float = 0.001
 
+var combo_level: int = 0
+
 
 
 func _physics_process(_delta) -> void:
@@ -30,7 +32,7 @@ func _physics_process(_delta) -> void:
 	move_and_slide()
 	
 
-func change_speed(combo_level: int) -> void:
+func change_speed() -> void:
 	match combo_level:
 		0:
 			speed = 150

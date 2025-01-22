@@ -1,13 +1,14 @@
-[gd_scene load_steps=11 format=4 uid="uid://un11lho26yb0"]
+[gd_scene load_steps=12 format=4 uid="uid://un11lho26yb0"]
 
 [ext_resource type="Script" path="res://Game/game.gd" id="1_q2x0k"]
 [ext_resource type="PackedScene" uid="uid://bdspyp38526mk" path="res://Player/player.tscn" id="1_usffs"]
-[ext_resource type="PackedScene" uid="uid://cc4rd2irruhmg" path="res://Breakable/stall.tscn" id="2_b8qv0"]
+[ext_resource type="PackedScene" uid="uid://cc4rd2irruhmg" path="res://Breakable/pot.tscn" id="2_b8qv0"]
 [ext_resource type="Script" path="res://Game/ui.gd" id="2_nxfvy"]
 [ext_resource type="Texture2D" uid="uid://ksvo7yqpker5" path="res://ground-boundaries.png" id="2_tpc2b"]
 [ext_resource type="Theme" uid="uid://b8irtq06na5ky" path="res://Game/game.tres" id="3_23llm"]
 [ext_resource type="Script" path="res://Game/combo_manager.gd" id="5_21s2v"]
 [ext_resource type="Script" path="res://Game/score_manager.gd" id="6_ejamr"]
+[ext_resource type="PackedScene" uid="uid://y11icjm7dheg" path="res://Breakable/stall.tscn" id="6_kqv3q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3xmjq"]
 texture = ExtResource("2_tpc2b")
@@ -144,6 +145,18 @@ position = Vector2(1353, -490)
 
 [node name="Stall6" parent="Level/BreakableContainer" instance=ExtResource("2_b8qv0")]
 position = Vector2(1114, -485)
+
+[node name="Stall23" parent="Level/BreakableContainer" instance=ExtResource("6_kqv3q")]
+position = Vector2(181, 300)
+
+[node name="Stall24" parent="Level/BreakableContainer" instance=ExtResource("6_kqv3q")]
+position = Vector2(182, 227)
+
+[node name="Stall25" parent="Level/BreakableContainer" instance=ExtResource("6_kqv3q")]
+position = Vector2(1139, -41)
+
+[node name="Stall26" parent="Level/BreakableContainer" instance=ExtResource("6_kqv3q")]
+position = Vector2(1141, -98)
 
 [node name="Player" parent="." instance=ExtResource("1_usffs")]
 modulate = Color(0, 0, 1, 1)
