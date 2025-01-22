@@ -1,13 +1,9 @@
-player controller:
-	i feel like turning should be somehow related to current velocity
-	when moving forward, stop pressing forward key and start turning with
-	existing velocity, it feels strange
-		somewhat fixed now although kinda strange
+collisions for breakables that you are not high enough combo to break
 
-allow player to break different breakables based on combo
-	requires additional work on breakable
-		make small, medium, large, breakable etc, or add a property on breakables that you set for each kind
-		which specifies how much rage is needed to break it
+cant turn while reversing
+
+make an actual level
+make a title screen with control instructions
 
 also allow for slower acceleration to a top speed that can then be boosted by combo or other factors
 

@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://y11icjm7dheg"]
+[gd_scene load_steps=5 format=3 uid="uid://y11icjm7dheg"]
 
 [ext_resource type="PackedScene" uid="uid://sh5ba58iyroq" path="res://Breakable/breakable.tscn" id="1_fyjme"]
 [ext_resource type="Texture2D" uid="uid://dnpc2nxse3api" path="res://white_square.png" id="2_1hejw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i4ksn"]
-size = Vector2(20, 28)
+size = Vector2(16, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x6p5r"]
+size = Vector2(26, 34)
 
 [node name="Stall" instance=ExtResource("1_fyjme")]
 score_value = 500
@@ -18,3 +21,6 @@ texture = ExtResource("2_1hejw")
 
 [node name="CollisionShape2D" parent="." index="2"]
 shape = SubResource("RectangleShape2D_i4ksn")
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+shape = SubResource("RectangleShape2D_x6p5r")
