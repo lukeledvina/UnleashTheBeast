@@ -1,7 +1,7 @@
-cant turn while reversing
-
-make an actual level
+make an actual level -> City Streets
 make a title screen with control instructions
+
+maybe go down to just 3 combo levels, the more levels you have the more unique props have to be made
 
 also allow for slower acceleration to a top speed that can then be boosted by combo or other factors
 
@@ -20,11 +20,50 @@ UI:
 	implement combo as a meter that drains over time
 	for now just implement as numbers, do more if time allows
 
+ART:
+	16x16 tiles
+	32x48 player ( could increase )
+
 
 LEVELS:
+	City Streets
+	construction site
+	LVL 0:
+		signs
+		plants
+	LVL 1:
+		pedestrians
+		stalls
+		telephone poles
+	LVL 2:
+		cars
+		scaffolding
+	LVL 3:
+		stores
+		parks
+
 	Shopping Mall
-	Return to Zoo
+		stalls
+		plants
+		pedestrians
+	Zoo
+		pedestrians
+		plants
+		stalls
+		exhibits
+		buildings
+		guard rails / walkways
+
 	Office Building
+		cubicles
+		plants
+		pedestrians
+	
+	Parking Garage
+		cars
+		cones
+		guard rails
+		pedestrians
 
 
 Elephant drifting

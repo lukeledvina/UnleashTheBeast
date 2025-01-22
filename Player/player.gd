@@ -9,7 +9,6 @@ var acceleration: float = 0.1
 var drift_speed: float = 1.5
 var turn_speed: float = 0.75
 var friction: float = 0.001
-
 var combo_level: int = 0
 
 
