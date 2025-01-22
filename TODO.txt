@@ -4,8 +4,6 @@ player controller:
 	existing velocity, it feels strange
 		somewhat fixed now although kinda strange
 
-increase player speed based on combo
-	requires reworking of player controller
 allow player to break different breakables based on combo
 	requires additional work on breakable
 		make small, medium, large, breakable etc, or add a property on breakables that you set for each kind
