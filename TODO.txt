@@ -1,5 +1,3 @@
-collisions for breakables that you are not high enough combo to break
-
 cant turn while reversing
 
 make an actual level

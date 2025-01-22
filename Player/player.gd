@@ -21,8 +21,9 @@ func _physics_process(_delta) -> void:
 		input_direction.y = 0
 		drift(input_direction.x)
 	elif input_direction.x != 0:
+		if input_direction.y == 0:
+			input_direction.y = -1
 		rotation_degrees += turn_speed * input_direction.x
-		input_direction.y = -1
 		input_direction = input_direction.normalized()
 		velocity = velocity.lerp(input_direction.rotated(deg_to_rad(rotation_degrees)) * speed, acceleration)
 	elif input_direction.y != 0:
