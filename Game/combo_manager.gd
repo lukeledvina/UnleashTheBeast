@@ -2,6 +2,8 @@ extends Node2D
 
 @onready var combo_timeout_timer: Timer = $ComboTimeoutTimer
 
+signal combo_timeout_signal()
+
 var combo_progress: int = 0
 var combo_breakpoint: int = 1000
 var combo_level: int = 0
@@ -14,6 +16,7 @@ func increase_combo(score: int) -> void:
 	combo_progress += score
 	if combo_progress >= combo_breakpoint:
 		combo_level = min(combo_level + 1, max_combo_level)
+		combo_progress = 0
 	
 	combo_timeout = false
 	combo_timeout_timer.stop()
@@ -30,3 +33,4 @@ func _process(delta):
 		combo_progress -= 10 * delta
 		if combo_progress < 0:
 			combo_level = max(combo_level - 1, min_combo_level)
+		combo_timeout_signal.emit()

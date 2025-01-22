@@ -51,7 +51,8 @@ text = "Combo Level:  0"
 [node name="ComboProgressLabel" type="Label" parent="UI/Control/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_23llm")
-text = "Combo Level Progress: 0"
+theme_override_font_sizes/font_size = 12
+text = "Combo Progress: 0"
 
 [node name="Level" type="Node2D" parent="."]
 
@@ -90,6 +91,30 @@ rotation = 1.5708
 
 [node name="Stall7" parent="Level/BreakableContainer" instance=ExtResource("2_b8qv0")]
 position = Vector2(564, 36)
+rotation = 1.5708
+
+[node name="Stall17" parent="Level/BreakableContainer" instance=ExtResource("2_b8qv0")]
+position = Vector2(521, 40)
+rotation = 1.5708
+
+[node name="Stall18" parent="Level/BreakableContainer" instance=ExtResource("2_b8qv0")]
+position = Vector2(479, 41)
+rotation = 1.5708
+
+[node name="Stall19" parent="Level/BreakableContainer" instance=ExtResource("2_b8qv0")]
+position = Vector2(425, 39)
+rotation = 1.5708
+
+[node name="Stall20" parent="Level/BreakableContainer" instance=ExtResource("2_b8qv0")]
+position = Vector2(384, 40)
+rotation = 1.5708
+
+[node name="Stall21" parent="Level/BreakableContainer" instance=ExtResource("2_b8qv0")]
+position = Vector2(344, 40)
+rotation = 1.5708
+
+[node name="Stall22" parent="Level/BreakableContainer" instance=ExtResource("2_b8qv0")]
+position = Vector2(305, 41)
 rotation = 1.5708
 
 [node name="Stall8" parent="Level/BreakableContainer" instance=ExtResource("2_b8qv0")]

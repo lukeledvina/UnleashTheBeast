@@ -13,14 +13,16 @@ var friction: float = 0.01
 func _physics_process(_delta):
 	var input_direction = Input.get_vector("left", "right", "up", "down")
 	#velocity = input_direction.rotated(deg_to_rad(rotation_degrees)) * max_speed
-	if input_direction.y != 0:
+	if Input.is_action_pressed("drift"):
+		input_direction.y = 0
+		drift(input_direction.x)
+	elif input_direction.y != 0:
 		velocity = velocity.lerp(input_direction.rotated(deg_to_rad(rotation_degrees)) * max_speed, acceleration)
 	else:
 		velocity = velocity.lerp(Vector2.ZERO, friction)
 	move_and_slide()
 	
-	#if Input.is_action_pressed("drift"):
-	drift(input_direction.x)
+
 		
 
 
