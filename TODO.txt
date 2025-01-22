@@ -1,4 +1,7 @@
-a bug exists with decreasing rage levels
+player controller:
+	i feel like turning should be somehow related to current velocity
+	currently, when turning with low velocity it seems unrealistic
+	moving too quickly
 
 increase player speed based on combo
 allow player to break different breakables based on combo
@@ -17,8 +20,6 @@ how to implement the fun:
 	seeing pedestrians run away in fear
 
 UI:
-	setup container for labels ?
-
 	implement combo as a meter that drains over time
 	for now just implement as numbers, do more if time allows
 
@@ -31,4 +32,4 @@ LEVELS:
 main thing is to just run around inside buildings, destroying smaller props to get points
 larger props require more momentum? and give more points/combo
 
-Elephant
+Elephant drifting

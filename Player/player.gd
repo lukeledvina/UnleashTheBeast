@@ -8,7 +8,9 @@ var min_speed: int = 100
 var acceleration: float = 0.1
 var drift_speed: float = 1.5
 var turn_speed: float = 0.75
-var friction: float = 0.01
+var friction: float = 0.001
+
+var turning_correction_factor: float = 0.01
 
 
 func _physics_process(_delta):
@@ -19,7 +21,7 @@ func _physics_process(_delta):
 		drift(input_direction.x)
 	elif input_direction.x != 0:
 		rotation_degrees += turn_speed * input_direction.x
-		velocity = velocity.lerp(input_direction.rotated(deg_to_rad(rotation_degrees)) * max_speed, acceleration)
+		velocity = velocity.lerp(input_direction.rotated(deg_to_rad(rotation_degrees)) * max_speed * velocity.x * turning_correction_factor, acceleration)
 	elif input_direction.y != 0:
 		velocity = velocity.lerp(input_direction.rotated(deg_to_rad(rotation_degrees)) * max_speed, acceleration)
 	else:
