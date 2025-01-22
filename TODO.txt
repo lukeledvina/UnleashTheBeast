@@ -1,7 +1,8 @@
 player controller:
 	i feel like turning should be somehow related to current velocity
-	currently, when turning with low velocity it seems unrealistic
-	moving too quickly
+	when moving forward, stop pressing forward key and start turning with
+	existing velocity, it feels strange
+		somewhat fixed now although kinda strange
 
 increase player speed based on combo
 allow player to break different breakables based on combo
@@ -28,8 +29,6 @@ LEVELS:
 	Shopping Mall
 	Return to Zoo
 	Office Building
-	
-main thing is to just run around inside buildings, destroying smaller props to get points
-larger props require more momentum? and give more points/combo
+
 
 Elephant drifting
