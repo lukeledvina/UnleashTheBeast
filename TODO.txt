@@ -1,11 +1,9 @@
-when and where to update combo UI
 increase player speed based on combo
 allow player to break different breakables based on combo
 
-
 also allow for slower acceleration to a top speed that can then be boosted by combo or other factors
 
-no matter what try to maintain player momentum
+no matter what try to maintain and emphasize player momentum
 
 
 WHERE IS THE FUN?:
@@ -21,6 +19,7 @@ UI:
 
 	implement combo as a meter that drains over time
 	for now just implement as numbers, do more if time allows
+	can change name of combo meter to RAGE
 
 
 LEVELS:
