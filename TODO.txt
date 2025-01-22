@@ -5,7 +5,11 @@ player controller:
 		somewhat fixed now although kinda strange
 
 increase player speed based on combo
+	requires reworking of player controller
 allow player to break different breakables based on combo
+	requires additional work on breakable
+		make small, medium, large, breakable etc, or add a property on breakables that you set for each kind
+		which specifies how much rage is needed to break it
 
 also allow for slower acceleration to a top speed that can then be boosted by combo or other factors
 
