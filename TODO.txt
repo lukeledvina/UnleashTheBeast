@@ -7,6 +7,7 @@ also allow for slower acceleration to a top speed that can then be boosted by co
 
 no matter what try to maintain and emphasize player momentum
 
+DONT WORRY TOO MUCH ABT GRAPHICS, IMPLEMENT THEM, BUT MAINLY JUST MAKE THE GAME
 
 WHERE IS THE FUN?:
 	in seeing things you touch get destroyed, and seeing the effects of your rampage
@@ -23,6 +24,8 @@ UI:
 ART:
 	16x16 tiles
 	32x48 player ( could increase )
+
+	animation for bouncing off breakable, in code...
 
 
 LEVELS:

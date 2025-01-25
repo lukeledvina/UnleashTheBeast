@@ -2,13 +2,14 @@ extends CharacterBody2D
 
 @onready var camera: Camera2D = $Camera2D
 @onready var sprite: Sprite2D = $Sprite2D
+@onready var animation_player = $AnimationPlayer
 
 
 var speed: int = 150
 var acceleration: float = 0.1
 var drift_speed: float = 1.5
 var turn_speed: float = 0.75
-var friction: float = 0.001
+var friction: float = 0.01
 var combo_level: int = 0
 
 
@@ -29,6 +30,13 @@ func _physics_process(_delta) -> void:
 		velocity = velocity.lerp(input_direction.rotated(deg_to_rad(rotation_degrees)) * speed, acceleration)
 	else:
 		velocity = velocity.lerp(Vector2.ZERO, friction)
+
+	if velocity != Vector2.ZERO:
+		animation_player.play("walk")
+		print(velocity)
+	else:
+		animation_player.stop()
+
 	move_and_slide()
 	
 
