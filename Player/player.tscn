@@ -1,10 +1,65 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdspyp38526mk"]
+[gd_scene load_steps=8 format=3 uid="uid://bdspyp38526mk"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_c8j8q"]
 [ext_resource type="Texture2D" uid="uid://lqnkq458va4g" path="res://Player/player.png" id="2_0q7dk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bb4jk"]
 size = Vector2(32, 48)
+
+[sub_resource type="Animation" id="Animation_18mm6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:drifting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_kg6de"]
+resource_name = "jump"
+length = 0.65
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [4, 5, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:drifting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_8rvgf"]
 resource_name = "walk"
@@ -23,24 +78,10 @@ tracks/0/keys = {
 "values": [0, 1, 2, 3]
 }
 
-[sub_resource type="Animation" id="Animation_18mm6"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_guhxy"]
 _data = {
 "RESET": SubResource("Animation_18mm6"),
+"jump": SubResource("Animation_kg6de"),
 "walk": SubResource("Animation_8rvgf")
 }
 
@@ -50,7 +91,7 @@ script = ExtResource("1_c8j8q")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_0q7dk")
-hframes = 4
+hframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_bb4jk")

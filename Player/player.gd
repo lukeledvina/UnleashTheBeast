@@ -12,6 +12,7 @@ var turn_speed: float = 0.75
 var friction: float = 0.01
 var combo_level: int = 0
 
+@export var drifting: bool = false
 
 
 func _physics_process(_delta) -> void:
@@ -20,21 +21,25 @@ func _physics_process(_delta) -> void:
 	if Input.is_action_pressed("drift"):
 		input_direction.y = 0
 		drift(input_direction.x)
+		animation_player.play("jump")
 	elif input_direction.x != 0:
+		animation_player.play("walk")
+		drifting = false
 		if input_direction.y == 0:
 			input_direction.y = -1
 		rotation_degrees += turn_speed * input_direction.x
 		input_direction = input_direction.normalized()
 		velocity = velocity.lerp(input_direction.rotated(deg_to_rad(rotation_degrees)) * speed, acceleration)
 	elif input_direction.y != 0:
+		drifting = false
+		animation_player.play("walk")
 		velocity = velocity.lerp(input_direction.rotated(deg_to_rad(rotation_degrees)) * speed, acceleration)
 	else:
-		velocity = velocity.lerp(Vector2.ZERO, friction)
-
-	if velocity != Vector2.ZERO:
+		drifting = false
 		animation_player.play("walk")
-		print(velocity)
-	else:
+		velocity = velocity.lerp(Vector2.ZERO, friction)
+	
+	if drifting:
 		animation_player.stop()
 
 	move_and_slide()
