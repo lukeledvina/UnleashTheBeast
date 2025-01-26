@@ -1,5 +1,7 @@
 make an actual level -> City Streets
-make a title screen with control instructions
+	timer until you lose / get caught
+control instructions
+make art
 
 maybe go down to just 3 combo levels, the more levels you have the more unique props have to be made
 
