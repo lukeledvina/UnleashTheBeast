@@ -1,10 +1,14 @@
 extends Node2D
 
-var game_over_screen: PackedScene = preload("res://Game/game_over_screen.tscn")
+@onready var game_over_screen = $"../UI/GameOverScreen"
 
 func _ready():
 	$LoseTimer.start()
 
 
 func _on_lose_timer_timeout():
-	get_tree().change_scene_to_packed(game_over_screen)
+	game_over_screen.final_score = $"../ScoreManager".total_score
+	game_over_screen.update_labels()
+	$"../UI/Control".visible = false
+	$"../Player".can_control = false
+	game_over_screen.visible = true

@@ -5,6 +5,7 @@ extends Node2D
 @onready var player = $Player
 var total_score: int = 0
 @onready var breakables = $Level/BreakableContainer.get_children()
+@onready var game_over_screen = $UI/GameOverScreen
 
 @onready var combo_manager = $ComboManager
 
@@ -22,6 +23,7 @@ func _on_breakable_broken(score_value, combo_value):
 	ui.update_score_label(score_manager.total_score)
 	ui.update_combo_labels(combo_manager.combo_progress, combo_manager.combo_level)
 	player.change_speed()
+	game_over_screen.total_objects_destroyed += 1
 
 func _on_combo_timeout():
 	ui.update_combo_labels(combo_manager.combo_progress, combo_manager.combo_level)

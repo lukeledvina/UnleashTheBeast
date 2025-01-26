@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=4 uid="uid://un11lho26yb0"]
+[gd_scene load_steps=16 format=4 uid="uid://un11lho26yb0"]
 
 [ext_resource type="Script" path="res://Game/game.gd" id="1_q2x0k"]
 [ext_resource type="PackedScene" uid="uid://bdspyp38526mk" path="res://Player/player.tscn" id="1_usffs"]
+[ext_resource type="PackedScene" uid="uid://cu8l5k2s5av6u" path="res://Game/game_over_screen.tscn" id="2_0vuf3"]
 [ext_resource type="Script" path="res://Game/ui.gd" id="2_nxfvy"]
 [ext_resource type="Texture2D" uid="uid://ksvo7yqpker5" path="res://ground-boundaries.png" id="2_tpc2b"]
 [ext_resource type="Theme" uid="uid://b8irtq06na5ky" path="res://Game/game.tres" id="3_23llm"]
@@ -58,33 +59,54 @@ script = ExtResource("1_q2x0k")
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("2_nxfvy")
 
+[node name="GameOverScreen" parent="UI" instance=ExtResource("2_0vuf3")]
+visible = false
+
 [node name="Control" type="Control" parent="UI"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/Control"]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+theme_override_constants/margin_left = 10
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/Control"]
-layout_mode = 1
-anchors_preset = -1
-offset_left = 5.0
-offset_top = 5.0
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Control/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 485
 
-[node name="ScoreLabel" type="Label" parent="UI/Control/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Control/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="ScoreLabel" type="Label" parent="UI/Control/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_23llm")
 text = "Score: 0"
 
-[node name="ComboLevelLabel" type="Label" parent="UI/Control/VBoxContainer"]
+[node name="ComboLevelLabel" type="Label" parent="UI/Control/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_23llm")
 text = "Rage Level:  0"
 
-[node name="ComboProgressLabel" type="Label" parent="UI/Control/VBoxContainer"]
+[node name="ComboProgressLabel" type="Label" parent="UI/Control/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_23llm")
 theme_override_font_sizes/font_size = 12
 text = "Rage Progress: 0"
+
+[node name="TimeRemainingLabel" type="Label" parent="UI/Control/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0:00"
+horizontal_alignment = 3
 
 [node name="Level" type="Node2D" parent="."]
 
@@ -180,7 +202,7 @@ script = ExtResource("6_ejamr")
 script = ExtResource("11_xk6pb")
 
 [node name="LoseTimer" type="Timer" parent="FailStateManager"]
-wait_time = 60.0
+wait_time = 10.0
 one_shot = true
 
 [connection signal="timeout" from="ComboManager/ComboTimeoutTimer" to="ComboManager" method="_on_combo_timeout_timer_timeout"]

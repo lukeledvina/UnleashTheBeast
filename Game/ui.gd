@@ -1,8 +1,10 @@
 extends CanvasLayer
 
-@onready var score_label = $Control/VBoxContainer/ScoreLabel
-@onready var combo_level_label = $Control/VBoxContainer/ComboLevelLabel
-@onready var combo_progress_label = $Control/VBoxContainer/ComboProgressLabel
+@onready var score_label = $Control/MarginContainer/HBoxContainer/VBoxContainer/ScoreLabel
+@onready var combo_level_label = $Control/MarginContainer/HBoxContainer/VBoxContainer/ComboLevelLabel
+@onready var combo_progress_label = $Control/MarginContainer/HBoxContainer/VBoxContainer/ComboProgressLabel
+@onready var time_remaining_label: Label = $Control/MarginContainer/HBoxContainer/TimeRemainingLabel
+@onready var lose_timer: Timer = $"../FailStateManager/LoseTimer"
 
 func update_score_label(score):
 	score_label.text = "Score: " + str(score)
@@ -10,3 +12,6 @@ func update_score_label(score):
 func update_combo_labels(combo_progress, combo_level):
 	combo_level_label.text = "Rage Level: " + str(combo_level)
 	combo_progress_label.text = "Rage Progress: " + str(combo_progress)
+	
+func _process(delta):
+	time_remaining_label.text = "%d:%02d" % [floor(lose_timer.time_left / 60), int(lose_timer.time_left) % 60]

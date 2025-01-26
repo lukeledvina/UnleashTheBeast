@@ -1,3 +1,6 @@
+track total objects destroyed, pass to the game over screen
+same with score
+
 make an actual level -> City Streets
 	timer until you lose / get caught
 control instructions
