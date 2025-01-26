@@ -1,9 +1,9 @@
 extends CanvasLayer
 
-@onready var score_label = $Control/MarginContainer/HBoxContainer/VBoxContainer/ScoreLabel
-@onready var combo_level_label = $Control/MarginContainer/HBoxContainer/VBoxContainer/ComboLevelLabel
-@onready var combo_progress_label = $Control/MarginContainer/HBoxContainer/VBoxContainer/ComboProgressLabel
-@onready var time_remaining_label: Label = $Control/MarginContainer/HBoxContainer/TimeRemainingLabel
+@onready var score_label = $Control/MarginContainer/VBoxContainer/ScoreLabel
+@onready var combo_level_label = $Control/MarginContainer/VBoxContainer/ComboLevelLabel
+@onready var combo_progress_label = $Control/MarginContainer/VBoxContainer/ComboProgressLabel
+@onready var time_remaining_label: Label = $Control/MarginContainer/TimeRemainingLabel
 @onready var lose_timer: Timer = $"../FailStateManager/LoseTimer"
 
 func update_score_label(score):

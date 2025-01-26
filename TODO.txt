@@ -1,8 +1,5 @@
-track total objects destroyed, pass to the game over screen
-same with score
-
 make an actual level -> City Streets
-	timer until you lose / get caught
+	at first, hard to destroy stuff and most has to be avoided, but second and third time around you can start destroying more and more
 control instructions
 make art
 
@@ -24,7 +21,7 @@ how to implement the fun:
 
 UI:
 	implement combo as a meter that drains over time
-	for now just implement as numbers, do more if time allows
+	new font and theme for whole game UI
 
 ART:
 	16x16 tiles
