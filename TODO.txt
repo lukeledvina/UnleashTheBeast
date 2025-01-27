@@ -8,7 +8,9 @@ TODO (order agnostic):
 
 make an actual level -> City Streets
 	at first, hard to destroy stuff and most has to be avoided, but second and third time around you can start destroying more and more
-
+upload to itch and submit
+make song
+make art
 
 maybe go down to just 3 combo levels, the more levels you have the more unique props have to be made
 
