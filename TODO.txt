@@ -1,7 +1,14 @@
+TODO (order agnostic):
+	add breakables to level & test
+	add rest of geometry to trap player in loop
+	add music track
+	add rest of art
+
+
+
 make an actual level -> City Streets
 	at first, hard to destroy stuff and most has to be avoided, but second and third time around you can start destroying more and more
-control instructions
-make art
+
 
 maybe go down to just 3 combo levels, the more levels you have the more unique props have to be made
 

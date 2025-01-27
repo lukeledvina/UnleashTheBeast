@@ -3,3 +3,5 @@
 [ext_resource type="PackedScene" uid="uid://sh5ba58iyroq" path="res://Breakable/breakable.tscn" id="1_11lba"]
 
 [node name="Statue" instance=ExtResource("1_11lba")]
+score_value = 500
+combo_threshold = 2

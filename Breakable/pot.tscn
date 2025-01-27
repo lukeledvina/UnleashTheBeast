@@ -10,6 +10,7 @@ size = Vector2(16, 16)
 size = Vector2(26, 26)
 
 [node name="Pot" instance=ExtResource("1_fyjme")]
+combo_value = 50
 
 [node name="Sprite2D" parent="." index="1"]
 modulate = Color(0.595343, 0.32759, 2.88785e-07, 1)

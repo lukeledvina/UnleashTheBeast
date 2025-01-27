@@ -10,8 +10,8 @@ size = Vector2(16, 24)
 size = Vector2(26, 34)
 
 [node name="Stall" instance=ExtResource("1_fyjme")]
-score_value = 500
-combo_value = 200
+score_value = 250
+combo_value = 75
 combo_threshold = 1
 
 [node name="Sprite2D" parent="." index="1"]
