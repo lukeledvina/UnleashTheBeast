@@ -1,4 +1,5 @@
 TODO (order agnostic):
+	breakables can be launched randomly
 	add breakables to level & test
 	add rest of geometry to trap player in loop
 	add music track

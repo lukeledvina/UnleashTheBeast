@@ -52,15 +52,15 @@ func change_speed() -> void:
 		0:
 			speed = 150
 		1:
-			speed = 200
+			speed = 175
 		2:
-			speed = 250
+			speed = 200
 		3:
-			speed = 300
+			speed = 225
 		4: 
-			speed = 350
+			speed = 250
 		5:
-			speed = 400
+			speed = 275
 
 
 func drift(direction) -> void:

@@ -17,3 +17,7 @@ func _on_area_2d_body_entered(body):
 		self.queue_free()
 	else:
 		rigidbody_collision_shape.set_deferred("disabled", false)
+
+func _physics_process(delta):
+	linear_velocity = Vector2.ZERO
+	angular_velocity = 0
