@@ -13,6 +13,9 @@ func update_combo_labels(combo_progress, combo_level):
 	combo_level_label.text = "Rage Level: " + str(combo_level)
 	combo_progress_label.text = "Rage Progress: " + str(combo_progress)
 	
-func _process(delta):
-	time_remaining_label.text = "%d:%02d" % [floor(lose_timer.time_left / 60), int(lose_timer.time_left) % 60]
+func _process(_delta):
+	if lose_timer.time_left == 0:
+		time_remaining_label.text = "2:00"
+	else:
+		time_remaining_label.text = "%d:%02d" % [floor(lose_timer.time_left / 60), int(lose_timer.time_left) % 60]
 	$CenterContainer/GameStartTimerLabel.text = "Start: " + str(int($"../GameStartTimer".time_left + 1))
