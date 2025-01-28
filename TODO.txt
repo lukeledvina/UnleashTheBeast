@@ -1,11 +1,12 @@
 TODO (order agnostic):
-	breakables can be launched randomly
 	add breakables to level & test
 	add rest of geometry to trap player in loop
 	add music track
+		one song, maybe filter it for main menu?
 	add rest of art
-
-
+		breakables & their animations
+		border art
+		UI theme
 
 make an actual level -> City Streets
 	at first, hard to destroy stuff and most has to be avoided, but second and third time around you can start destroying more and more

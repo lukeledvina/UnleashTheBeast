@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://un11lho26yb0"]
+[gd_scene load_steps=19 format=4 uid="uid://un11lho26yb0"]
 
 [ext_resource type="Script" path="res://Game/game.gd" id="1_q2x0k"]
 [ext_resource type="PackedScene" uid="uid://bdspyp38526mk" path="res://Player/player.tscn" id="1_usffs"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://k0r2mti2jjyx" path="res://Breakable/car.tscn" id="9_n22n5"]
 [ext_resource type="PackedScene" uid="uid://bvind6sjncd67" path="res://Breakable/statue.tscn" id="10_lxagn"]
 [ext_resource type="Script" path="res://Game/fail_state_manager.gd" id="11_xk6pb"]
+[ext_resource type="AudioStream" uid="uid://dtl8yxk160s0g" path="res://Audio/unleash_the_beast_song1.wav" id="15_iqc34"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cm0yx"]
 texture = ExtResource("4_1yyu7")
@@ -329,6 +330,18 @@ position = Vector2(57, -1289)
 [node name="Pot100" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(-111, -1285)
 
+[node name="Pot144" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(78, -1117)
+
+[node name="Pot145" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-282, -1118)
+
+[node name="Pot146" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(385, -1109)
+
+[node name="Pot147" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-316, -772)
+
 [node name="Pot101" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(-289, -1286)
 
@@ -398,11 +411,26 @@ position = Vector2(-712, -674)
 [node name="Pot143" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(-712, -490)
 
+[node name="Pot148" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-826, -701)
+
+[node name="Pot149" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-1102, -692)
+
 [node name="Pot110" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(-528, -419)
 
 [node name="Pot111" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(-520, -327)
+
+[node name="Pot150" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-953, -315)
+
+[node name="Pot151" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-1048, -64)
+
+[node name="Pot152" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-519, -63)
 
 [node name="Pot112" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(-877, -151)
@@ -665,6 +693,9 @@ position = Vector2(-1036, -976)
 [node name="Stall10" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(-496, -981)
 
+[node name="Stall21" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
+position = Vector2(-309, -947)
+
 [node name="Stall11" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(299, -1335)
 
@@ -698,6 +729,18 @@ rotation = 1.5708
 
 [node name="Stall6" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(583, -406)
+rotation = 1.5708
+
+[node name="Stall19" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
+position = Vector2(249, -1106)
+rotation = 1.5708
+
+[node name="Stall20" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
+position = Vector2(-103, -1110)
+rotation = 1.5708
+
+[node name="Stall22" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
+position = Vector2(-942, -701)
 rotation = 1.5708
 
 [node name="Stall13" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
@@ -972,8 +1015,12 @@ script = ExtResource("6_ejamr")
 script = ExtResource("11_xk6pb")
 
 [node name="LoseTimer" type="Timer" parent="FailStateManager"]
-wait_time = 60.0
+wait_time = 120.0
 one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_iqc34")
+autoplay = true
 
 [connection signal="timeout" from="ComboManager/ComboTimeoutTimer" to="ComboManager" method="_on_combo_timeout_timer_timeout"]
 [connection signal="timeout" from="FailStateManager/LoseTimer" to="FailStateManager" method="_on_lose_timer_timeout"]
