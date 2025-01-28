@@ -28,3 +28,10 @@ func _on_breakable_broken(score_value, combo_value):
 func _on_combo_timeout():
 	ui.update_combo_labels(combo_manager.combo_progress, combo_manager.combo_level)
 	player.change_speed()
+
+
+func _on_game_start_timer_timeout():
+	player.can_control = true
+	$AudioStreamPlayer.play()
+	$FailStateManager/LoseTimer.start()
+	$UI/CenterContainer.hide()

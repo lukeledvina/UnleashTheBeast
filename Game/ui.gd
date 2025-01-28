@@ -15,3 +15,4 @@ func update_combo_labels(combo_progress, combo_level):
 	
 func _process(delta):
 	time_remaining_label.text = "%d:%02d" % [floor(lose_timer.time_left / 60), int(lose_timer.time_left) % 60]
+	$CenterContainer/GameStartTimerLabel.text = "Start: " + str(int($"../GameStartTimer".time_left + 1))

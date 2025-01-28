@@ -220,6 +220,19 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "0:00"
 horizontal_alignment = 3
 
+[node name="CenterContainer" type="CenterContainer" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameStartTimerLabel" type="Label" parent="UI/CenterContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Start: 3"
+
 [node name="Level" type="Node2D" parent="."]
 
 [node name="GroundAndBoundaries" type="TileMapLayer" parent="Level"]
@@ -1020,7 +1033,13 @@ one_shot = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_iqc34")
-autoplay = true
+volume_db = -5.0
+
+[node name="GameStartTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
 
 [connection signal="timeout" from="ComboManager/ComboTimeoutTimer" to="ComboManager" method="_on_combo_timeout_timer_timeout"]
 [connection signal="timeout" from="FailStateManager/LoseTimer" to="FailStateManager" method="_on_lose_timer_timeout"]
+[connection signal="timeout" from="GameStartTimer" to="." method="_on_game_start_timer_timeout"]

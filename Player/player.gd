@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var animation_player = $AnimationPlayer
 
-var can_control: bool = true
+var can_control: bool = false
 
 var speed: int = 150
 var acceleration: float = 0.1
