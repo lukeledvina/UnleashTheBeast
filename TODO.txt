@@ -1,12 +1,12 @@
 TODO (order agnostic):
-	game countdown timer
-	add breakables to level & test
 	add rest of geometry to trap player in loop
-	add music track
-		one song, maybe filter it for main menu?
 	add rest of art
 		breakables & their animations
-		border art
+			pot
+			stall
+			statue
+			car
+			buildings
 		UI theme
 
 make an actual level -> City Streets

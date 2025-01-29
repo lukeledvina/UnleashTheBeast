@@ -1,24 +1,24 @@
 [gd_scene load_steps=5 format=3 uid="uid://cc4rd2irruhmg"]
 
 [ext_resource type="PackedScene" uid="uid://sh5ba58iyroq" path="res://Breakable/breakable.tscn" id="1_fyjme"]
-[ext_resource type="Texture2D" uid="uid://dnpc2nxse3api" path="res://white_square.png" id="2_1hejw"]
+[ext_resource type="Texture2D" uid="uid://v8ohsr0xmy35" path="res://Breakable/pot.png" id="2_vg8n2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vup5n"]
-size = Vector2(16, 16)
+size = Vector2(12, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8tyhx"]
-size = Vector2(26, 26)
+size = Vector2(24, 27)
 
 [node name="Pot" instance=ExtResource("1_fyjme")]
 combo_value = 50
 
 [node name="Sprite2D" parent="." index="1"]
-modulate = Color(0.595343, 0.32759, 2.88785e-07, 1)
-scale = Vector2(1.25, 1.25)
-texture = ExtResource("2_1hejw")
+texture = ExtResource("2_vg8n2")
+hframes = 5
 
 [node name="CollisionShape2D" parent="." index="2"]
 shape = SubResource("RectangleShape2D_vup5n")
 
 [node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_8tyhx")
