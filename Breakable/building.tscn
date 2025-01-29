@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://7wjpimiyqsyl"]
+
+[ext_resource type="PackedScene" uid="uid://sh5ba58iyroq" path="res://Breakable/breakable.tscn" id="1_hq4a0"]
+[ext_resource type="Texture2D" uid="uid://dgt46cegmy0ja" path="res://Breakable/building.png" id="2_7th2t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_87ftu"]
+size = Vector2(56, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0pwsf"]
+size = Vector2(68, 82)
+
+[node name="Building" instance=ExtResource("1_hq4a0")]
+score_value = 5000
+combo_value = 200
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_7th2t")
+
+[node name="CollisionShape2D" parent="." index="2"]
+shape = SubResource("RectangleShape2D_87ftu")
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+shape = SubResource("RectangleShape2D_0pwsf")
