@@ -1011,69 +1011,113 @@ position = Vector2(228, -1373)
 position = Vector2(-721, -1346)
 
 [node name="Statue11" parent="Level/BreakableContainer" instance=ExtResource("10_lxagn")]
-position = Vector2(-37, 667)
+position = Vector2(-86, 683)
 
 [node name="Building" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-34, 538)
+position = Vector2(-40, 587)
+combo_threshold = 4
+
+[node name="Building5" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-132, 583)
 combo_threshold = 4
 
 [node name="Building2" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, 464)
+position = Vector2(-38, 498)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building3" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, 398)
+position = Vector2(-37, 420)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building4" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, 332)
-rotation = -1.5708
-combo_threshold = 4
-
-[node name="Building5" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, 332)
+position = Vector2(-37, 339)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building6" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, 248)
+position = Vector2(-37, 261)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building7" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, 165)
+position = Vector2(-40, 186)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building8" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, 85)
+position = Vector2(-41, 107)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building9" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, 7)
+position = Vector2(-41, 36)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building10" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, -70)
+position = Vector2(-43, -36)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building11" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, -153)
+position = Vector2(-42, -108)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building12" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, -233)
+position = Vector2(-42, -178)
 rotation = -1.5708
 combo_threshold = 4
 
 [node name="Building13" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
-position = Vector2(-41, -311)
+position = Vector2(-41, -250)
+rotation = -1.5708
+combo_threshold = 4
+
+[node name="Building214" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-42, -317)
+rotation = -1.5708
+combo_threshold = 4
+
+[node name="Building191" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-89, -389)
+rotation = -1.5708
+combo_threshold = 4
+
+[node name="Building192" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-89, -465)
+rotation = -1.5708
+combo_threshold = 4
+
+[node name="Building193" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-89, -545)
+rotation = -1.5708
+combo_threshold = 4
+
+[node name="Building197" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-89, -623)
+rotation = -1.5708
+combo_threshold = 4
+
+[node name="Building198" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-89, -696)
+rotation = -1.5708
+combo_threshold = 4
+
+[node name="Building199" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-89, -779)
+rotation = -1.5708
+combo_threshold = 4
+
+[node name="Building200" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-89, -859)
+rotation = -1.5708
+combo_threshold = 4
+
+[node name="Building201" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-89, -937)
 rotation = -1.5708
 combo_threshold = 4
 
@@ -1502,6 +1546,66 @@ combo_threshold = 4
 
 [node name="Building106" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
 position = Vector2(1918, -1176)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building202" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-133, -89)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building203" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-133, -166)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building204" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-133, -239)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building205" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-132, -310)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building206" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-133, 205)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building207" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-133, 128)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building208" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-133, 55)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building209" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-132, -16)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building210" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-133, 500)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building211" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-133, 423)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building212" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-133, 350)
+rotation = 1.5708
+combo_threshold = 4
+
+[node name="Building213" parent="Level/BreakableContainer" instance=ExtResource("11_7k2re")]
+position = Vector2(-132, 279)
 rotation = 1.5708
 combo_threshold = 4
 
