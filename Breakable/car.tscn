@@ -1,27 +1,28 @@
 [gd_scene load_steps=5 format=3 uid="uid://k0r2mti2jjyx"]
 
 [ext_resource type="PackedScene" uid="uid://sh5ba58iyroq" path="res://Breakable/breakable.tscn" id="1_8wkf0"]
-[ext_resource type="Texture2D" uid="uid://dnpc2nxse3api" path="res://white_square.png" id="2_epy2n"]
+[ext_resource type="Texture2D" uid="uid://b8koqdumcjnst" path="res://Breakable/car.png" id="2_ms5jx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_my7qu"]
-size = Vector2(35, 57)
+size = Vector2(23, 57)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d3lgh"]
-size = Vector2(38, 66)
+size = Vector2(34, 82)
 
 [node name="Car" instance=ExtResource("1_8wkf0")]
-modulate = Color(0.294118, 1, 1, 1)
 score_value = 1000
 combo_value = 150
 combo_threshold = 3
 
 [node name="Sprite2D" parent="." index="1"]
-scale = Vector2(2.375, 4.125)
-texture = ExtResource("2_epy2n")
+rotation = -1.5708
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_ms5jx")
 
 [node name="CollisionShape2D" parent="." index="2"]
 position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_my7qu")
 
 [node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_d3lgh")

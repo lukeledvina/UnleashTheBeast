@@ -693,7 +693,7 @@ position = Vector2(197, 143)
 position = Vector2(199, 106)
 
 [node name="Stall" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
-position = Vector2(326, 406)
+position = Vector2(336, 406)
 
 [node name="Stall3" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(-699, -69)

@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://y11icjm7dheg"]
 
 [ext_resource type="PackedScene" uid="uid://sh5ba58iyroq" path="res://Breakable/breakable.tscn" id="1_fyjme"]
-[ext_resource type="Texture2D" uid="uid://dnpc2nxse3api" path="res://white_square.png" id="2_1hejw"]
+[ext_resource type="Texture2D" uid="uid://t8e2tw5vt7m5" path="res://Breakable/stall.png" id="2_i4tem"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i4ksn"]
-size = Vector2(16, 24)
+size = Vector2(32, 38)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x6p5r"]
-size = Vector2(26, 34)
+size = Vector2(44, 54)
 
 [node name="Stall" instance=ExtResource("1_fyjme")]
 score_value = 250
@@ -15,12 +15,13 @@ combo_value = 75
 combo_threshold = 1
 
 [node name="Sprite2D" parent="." index="1"]
-modulate = Color(0, 1, 0, 1)
-scale = Vector2(1.25, 1.75)
-texture = ExtResource("2_1hejw")
+rotation = -1.5708
+texture = ExtResource("2_i4tem")
 
 [node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(3, 0)
 shape = SubResource("RectangleShape2D_i4ksn")
 
 [node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(3, 1)
 shape = SubResource("RectangleShape2D_x6p5r")
