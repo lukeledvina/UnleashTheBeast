@@ -255,12 +255,6 @@ position = Vector2(203, 286)
 [node name="Pot6" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(335, 238)
 
-[node name="Pot7" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
-position = Vector2(336, 203)
-
-[node name="Pot8" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
-position = Vector2(335, 174)
-
 [node name="Pot9" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(334, 144)
 
@@ -269,6 +263,33 @@ position = Vector2(290, -17)
 
 [node name="Pot15" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(502, -120)
+
+[node name="Pot153" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(696, -13)
+
+[node name="Pot161" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(563, -16)
+
+[node name="Pot154" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(697, -54)
+
+[node name="Pot155" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(711, 139)
+
+[node name="Pot158" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(878, -116)
+
+[node name="Pot159" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(751, -192)
+
+[node name="Pot160" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(875, 58)
+
+[node name="Pot156" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(646, 139)
+
+[node name="Pot157" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(563, 135)
 
 [node name="Pot16" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(500, -219)
@@ -465,6 +486,15 @@ position = Vector2(-407, 290)
 [node name="Pot117" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(-810, 449)
 
+[node name="Pot163" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-867, 305)
+
+[node name="Pot164" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-704, 161)
+
+[node name="Pot162" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
+position = Vector2(-867, 160)
+
 [node name="Pot118" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(-681, 451)
 
@@ -606,20 +636,11 @@ position = Vector2(1258, -83)
 [node name="Pot69" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(1334, -83)
 
-[node name="Pot70" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
-position = Vector2(1413, -72)
-
 [node name="Pot71" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(1430, -123)
 
-[node name="Pot72" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
-position = Vector2(1433, -172)
-
 [node name="Pot73" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(1433, -212)
-
-[node name="Pot74" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
-position = Vector2(1433, -252)
 
 [node name="Pot75" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(1432, -297)
@@ -687,9 +708,6 @@ position = Vector2(370, -18)
 [node name="Pot10" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(200, 176)
 
-[node name="Pot11" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
-position = Vector2(197, 143)
-
 [node name="Pot12" parent="Level/BreakableContainer" instance=ExtResource("6_drfn8")]
 position = Vector2(199, 106)
 
@@ -732,6 +750,14 @@ position = Vector2(873, -38)
 
 [node name="Stall2" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(251, -18)
+rotation = 1.5708
+
+[node name="Stall23" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
+position = Vector2(-606, 271)
+rotation = 1.5708
+
+[node name="Stall24" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
+position = Vector2(-758, -322)
 rotation = 1.5708
 
 [node name="Stall4" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]

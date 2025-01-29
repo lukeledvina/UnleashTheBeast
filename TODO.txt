@@ -1,13 +1,8 @@
 TODO (order agnostic):
-	add rest of geometry to trap player in loop
-	add rest of art
-		breakables & their animations
-			pot
-			stall
-			statue
-			car
-			buildings
-		UI theme
+	add hit, drift, etc SFX
+	make combo meter
+	
+	rotate all objects to make sense
 	export game executable
 	make itch.io landing page
 	submit

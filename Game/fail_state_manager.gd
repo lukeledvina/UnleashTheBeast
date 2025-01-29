@@ -9,3 +9,4 @@ func _on_lose_timer_timeout():
 	$"../UI/Control".visible = false
 	$"../Player".can_control = false
 	game_over_screen.visible = true
+	$"../Player".velocity = Vector2.ZERO
