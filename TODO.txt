@@ -1,7 +1,7 @@
 TODO (order agnostic):
+	Pause button / menu when hitting esc
 	add hit, drift, etc SFX
 	make combo meter
-	
 	rotate all objects to make sense
 	export game executable
 	make itch.io landing page
