@@ -8,39 +8,13 @@ TODO (order agnostic):
 			car
 			buildings
 		UI theme
-
-make an actual level -> City Streets
-	at first, hard to destroy stuff and most has to be avoided, but second and third time around you can start destroying more and more
-upload to itch and submit
-make song
-make art
-
-maybe go down to just 3 combo levels, the more levels you have the more unique props have to be made
-
-also allow for slower acceleration to a top speed that can then be boosted by combo or other factors
-
-no matter what try to maintain and emphasize player momentum
-
-DONT WORRY TOO MUCH ABT GRAPHICS, IMPLEMENT THEM, BUT MAINLY JUST MAKE THE GAME
-
-WHERE IS THE FUN?:
-	in seeing things you touch get destroyed, and seeing the effects of your rampage
-	feeling unstoppable
+	export game executable
+	make itch.io landing page
+	submit
 	
-how to implement the fun:
-	good animations & sfx for destruction
-	seeing pedestrians run away in fear
-
 UI:
 	implement combo as a meter that drains over time
 	new font and theme for whole game UI
-
-ART:
-	16x16 tiles
-	32x48 player ( could increase )
-
-	animation for bouncing off breakable, in code...
-
 
 LEVELS:
 	City Streets
