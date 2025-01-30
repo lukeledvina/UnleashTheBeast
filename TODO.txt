@@ -1,6 +1,7 @@
 TODO (order agnostic):
 	add hit, drift, etc SFX
-	make combo meter
+		poof for breaking
+		x for not breakable yet
 	rotate all objects to make sense
 	export game executable
 	make itch.io landing page

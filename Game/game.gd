@@ -34,6 +34,7 @@ func _process(_delta):
 		$UI/Control.visible = false
 
 func _on_breakable_broken(score_value, combo_value):
+	$AudioStreamPlayer2.play()
 	score_manager.increase_score(score_value)
 	combo_manager.increase_combo(combo_value)
 	ui.update_score_label(score_manager.total_score)

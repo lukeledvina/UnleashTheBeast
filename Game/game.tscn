@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://un11lho26yb0"]
+[gd_scene load_steps=25 format=4 uid="uid://un11lho26yb0"]
 
 [ext_resource type="Script" path="res://Game/game.gd" id="1_q2x0k"]
 [ext_resource type="PackedScene" uid="uid://bdspyp38526mk" path="res://Player/player.tscn" id="1_usffs"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://7wjpimiyqsyl" path="res://Breakable/building.tscn" id="11_7k2re"]
 [ext_resource type="Script" path="res://Game/fail_state_manager.gd" id="11_xk6pb"]
 [ext_resource type="AudioStream" uid="uid://dtl8yxk160s0g" path="res://Audio/unleash_the_beast_song1.wav" id="15_iqc34"]
+[ext_resource type="AudioStream" uid="uid://ckre0bjsuviy7" path="res://Audio/zapsplat_impacts_heavy_box_drop_glass_inside_smash_001_32227.mp3" id="21_j3sny"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cm0yx"]
 texture = ExtResource("4_1yyu7")
@@ -2134,12 +2135,16 @@ one_shot = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_iqc34")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="GameStartTimer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
 autostart = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_j3sny")
+volume_db = -7.0
 
 [connection signal="pressed" from="UI/PauseScreen/MarginContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="UI/PauseScreen/MarginContainer/VBoxContainer/Quit Button" to="UI/PauseScreen" method="_on_quit_button_pressed"]
