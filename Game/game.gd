@@ -19,6 +19,7 @@ func _ready():
 
 func _process(_delta):
 	player.combo_level = combo_manager.combo_level
+	$UI/Control/MarginContainer/VBoxContainer/AspectRatioContainer/ComboProgressBar.value = combo_manager.combo_progress
 	
 	if Input.is_action_just_pressed("pause"):
 		player.velocity = Vector2.ZERO

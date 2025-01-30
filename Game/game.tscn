@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://un11lho26yb0"]
+[gd_scene load_steps=24 format=4 uid="uid://un11lho26yb0"]
 
 [ext_resource type="Script" path="res://Game/game.gd" id="1_q2x0k"]
 [ext_resource type="PackedScene" uid="uid://bdspyp38526mk" path="res://Player/player.tscn" id="1_usffs"]
@@ -11,7 +11,10 @@
 [ext_resource type="Script" path="res://Game/combo_manager.gd" id="5_21s2v"]
 [ext_resource type="PackedScene" uid="uid://cc4rd2irruhmg" path="res://Breakable/pot.tscn" id="6_drfn8"]
 [ext_resource type="Script" path="res://Game/score_manager.gd" id="6_ejamr"]
+[ext_resource type="Texture2D" uid="uid://dabtv2ebjuaok" path="res://UI/combo_progress_bar_bg.png" id="6_lfg5s"]
 [ext_resource type="PackedScene" uid="uid://y11icjm7dheg" path="res://Breakable/stall.tscn" id="7_1rcju"]
+[ext_resource type="Texture2D" uid="uid://by7b13t5n8iio" path="res://UI/combo_progress_bar_border.png" id="7_uasnj"]
+[ext_resource type="Texture2D" uid="uid://b3gbryfpi8bx4" path="res://UI/combo_progress_bar_fill.png" id="7_uh12c"]
 [ext_resource type="PackedScene" uid="uid://k0r2mti2jjyx" path="res://Breakable/car.tscn" id="9_n22n5"]
 [ext_resource type="PackedScene" uid="uid://bvind6sjncd67" path="res://Breakable/statue.tscn" id="10_lxagn"]
 [ext_resource type="PackedScene" uid="uid://7wjpimiyqsyl" path="res://Breakable/building.tscn" id="11_7k2re"]
@@ -248,11 +251,20 @@ layout_mode = 2
 theme = ExtResource("3_23llm")
 text = "Rage Level:  0"
 
-[node name="ComboProgressLabel" type="Label" parent="UI/Control/MarginContainer/VBoxContainer"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="UI/Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="ComboProgressBar" type="TextureProgressBar" parent="UI/Control/MarginContainer/VBoxContainer/AspectRatioContainer"]
 layout_mode = 2
 theme = ExtResource("3_23llm")
-theme_override_font_sizes/font_size = 12
-text = "Rage Progress: 0"
+max_value = 1000.0
+stretch_margin_left = 20
+stretch_margin_right = 110
+stretch_margin_bottom = 40
+texture_under = ExtResource("6_lfg5s")
+texture_over = ExtResource("7_uasnj")
+texture_progress = ExtResource("7_uh12c")
 
 [node name="TimeRemainingLabel" type="Label" parent="UI/Control/MarginContainer"]
 layout_mode = 2

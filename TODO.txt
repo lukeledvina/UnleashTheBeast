@@ -1,5 +1,4 @@
 TODO (order agnostic):
-	Pause button / menu when hitting esc
 	add hit, drift, etc SFX
 	make combo meter
 	rotate all objects to make sense
