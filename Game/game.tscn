@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://un11lho26yb0"]
+[gd_scene load_steps=21 format=4 uid="uid://un11lho26yb0"]
 
 [ext_resource type="Script" path="res://Game/game.gd" id="1_q2x0k"]
 [ext_resource type="PackedScene" uid="uid://bdspyp38526mk" path="res://Player/player.tscn" id="1_usffs"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ksvo7yqpker5" path="res://ground-boundaries.png" id="2_tpc2b"]
 [ext_resource type="Theme" uid="uid://b8irtq06na5ky" path="res://Game/game.tres" id="3_23llm"]
 [ext_resource type="Texture2D" uid="uid://bure2q4qh2ou7" path="res://ground-tiles.png" id="4_1yyu7"]
+[ext_resource type="Script" path="res://Game/pause_screen.gd" id="4_y205r"]
 [ext_resource type="Script" path="res://Game/combo_manager.gd" id="5_21s2v"]
 [ext_resource type="PackedScene" uid="uid://cc4rd2irruhmg" path="res://Breakable/pot.tscn" id="6_drfn8"]
 [ext_resource type="Script" path="res://Game/score_manager.gd" id="6_ejamr"]
@@ -169,6 +170,46 @@ script = ExtResource("1_q2x0k")
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("2_nxfvy")
+
+[node name="PauseScreen" type="Control" parent="UI"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_y205r")
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/PauseScreen"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -53.0
+offset_right = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 80
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/PauseScreen/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="UI/PauseScreen/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Game Paused"
+
+[node name="ResumeButton" type="Button" parent="UI/PauseScreen/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume"
+
+[node name="Quit Button" type="Button" parent="UI/PauseScreen/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
 
 [node name="GameOverScreen" parent="UI" instance=ExtResource("2_0vuf3")]
 visible = false
@@ -2088,6 +2129,8 @@ wait_time = 3.0
 one_shot = true
 autostart = true
 
+[connection signal="pressed" from="UI/PauseScreen/MarginContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="UI/PauseScreen/MarginContainer/VBoxContainer/Quit Button" to="UI/PauseScreen" method="_on_quit_button_pressed"]
 [connection signal="timeout" from="ComboManager/ComboTimeoutTimer" to="ComboManager" method="_on_combo_timeout_timer_timeout"]
 [connection signal="timeout" from="FailStateManager/LoseTimer" to="FailStateManager" method="_on_lose_timer_timeout"]
 [connection signal="timeout" from="GameStartTimer" to="." method="_on_game_start_timer_timeout"]

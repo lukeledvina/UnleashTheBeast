@@ -10,7 +10,6 @@ func update_labels():
 	$VBoxContainer/DestroyedLabel.text = "Objects Destroyed: " + str(total_objects_destroyed)
 
 func _on_play_again_button_pressed():
-	print("hello")
 	get_tree().change_scene_to_file("res://MainMenu/main_menu.tscn")
 
 func _on_quit_button_pressed():
