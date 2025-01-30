@@ -16,6 +16,7 @@ func _on_area_2d_body_entered(body):
 		broken.emit(score_value, combo_value)
 		self.queue_free()
 	else:
+		$AudioStreamPlayer.play()
 		rigidbody_collision_shape.set_deferred("disabled", false)
 
 func _physics_process(_delta):

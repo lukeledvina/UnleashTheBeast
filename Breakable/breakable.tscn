@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://sh5ba58iyroq"]
+[gd_scene load_steps=3 format=3 uid="uid://sh5ba58iyroq"]
 
 [ext_resource type="Script" path="res://Breakable/breakable.gd" id="1_qy8ek"]
+[ext_resource type="AudioStream" uid="uid://cpvu6yf77kn0j" path="res://Audio/zapsplat_multimedia_game_sound_low_frequency_blip_error_112553.mp3" id="2_uv2my"]
 
 [node name="Breakable" type="RigidBody2D"]
 collision_layer = 4
@@ -17,5 +18,9 @@ disabled = true
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_uv2my")
+volume_db = -10.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
