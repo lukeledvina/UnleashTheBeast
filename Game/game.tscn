@@ -766,41 +766,48 @@ position = Vector2(200, 176)
 position = Vector2(199, 106)
 
 [node name="Stall" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
-position = Vector2(336, 406)
+position = Vector2(345, 404)
+rotation = 3.14159
 
 [node name="Stall3" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
-position = Vector2(-699, -69)
+position = Vector2(-711, -62)
 
 [node name="Stall8" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
-position = Vector2(-880, -63)
+position = Vector2(-872, -62)
+rotation = 3.14159
 
 [node name="Stall9" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(-1036, -976)
+rotation = 3.14159
 
 [node name="Stall10" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(-496, -981)
 
 [node name="Stall21" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
-position = Vector2(-309, -947)
+position = Vector2(-322, -944)
+rotation = 3.14159
 
 [node name="Stall11" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(299, -1335)
 
 [node name="Stall17" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
-position = Vector2(211, -618)
+position = Vector2(219, -616)
+rotation = 3.14159
 
 [node name="Stall18" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(-712, -584)
 
 [node name="Stall15" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
-position = Vector2(-766, -1310)
+position = Vector2(-763, -1311)
+rotation = 3.14159
 
 [node name="Stall16" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
-position = Vector2(-142, -1555)
-rotation = 1.5708
+position = Vector2(-145, -1559)
+rotation = -1.5708
 
 [node name="Stall12" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(873, -38)
+rotation = 3.14159
 
 [node name="Stall2" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(251, -18)
@@ -820,23 +827,23 @@ rotation = 1.5708
 
 [node name="Stall5" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(390, 131)
-rotation = 1.5708
+rotation = -1.5708
 
 [node name="Stall6" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(583, -406)
 rotation = 1.5708
 
 [node name="Stall19" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
-position = Vector2(249, -1106)
-rotation = 1.5708
+position = Vector2(249, -1114)
+rotation = -1.5708
 
 [node name="Stall20" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(-103, -1110)
-rotation = 1.5708
+rotation = -1.5708
 
 [node name="Stall22" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(-942, -701)
-rotation = 1.5708
+rotation = -1.5708
 
 [node name="Stall13" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(1202, -227)
@@ -844,11 +851,11 @@ rotation = 1.5708
 
 [node name="Stall7" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(780, 132)
-rotation = 1.5708
+rotation = -1.5708
 
 [node name="Stall14" parent="Level/BreakableContainer" instance=ExtResource("7_1rcju")]
 position = Vector2(-43, 901)
-rotation = 1.5708
+rotation = -1.5708
 
 [node name="Car" parent="Level/BreakableContainer" instance=ExtResource("9_n22n5")]
 position = Vector2(239, 382)
